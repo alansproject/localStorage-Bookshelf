@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    pad: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif, 'Segoe UI';
+}
+
+body{
+    background-color: #F3F4F6;
+}
+
+header h1{
+    margin: 2rem 2rem 3rem 0rem;
+    text-align: right;
+}
+
+main{
+    display: flex;
+    gap: 7rem;   
+    padding: 0rem 5rem;
+}
+
+.left-section-input{
+    background-color: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    padding: 1rem 2rem;
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    height: 450px;
+}
+
+.left-section-input form{
+    min-width: 150px;
+    width: 300px;
+}
+
+.left-section-input h2{
+    margin-bottom: 2rem;
+}
+
+.left-section-input form input:not([type="checkbox"]){
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    border: 1px solid #D1D5DB;
+    padding: 0.2rem 0.3rem;
+    outline: none;
+}
+
+.left-section-input button{
+    background-color: #2563EB;
+    color: #FFFFFF; 
+    border: none; 
+    border-radius: 6px; 
+    padding: 10px 20px; 
+    font-weight: 500; 
+    cursor: pointer; 
+    transition: background-color 0.2s ease-in-out;
+    margin-top: 2rem;
+}
+
+.right-section-booklist button, .right-section-booklist form button{
+    margin-right: 0.3rem;
+}
+
+.right-section-booklist section{
+    margin-bottom: 2rem;
+}
+
+.right-section-booklist .on-progress #incompleteBookList{
+    margin: 1rem 0rem;
+}
+
+.on-progress h2, .finished h2{
+    margin: 3rem 0rem 1rem 0rem;
+}
+
+.book-card{
+    border: 1px solid #D1D5DB;
+    padding: 1rem 1.5rem;
+    background-color: #FFFFFF;
+    border-radius: 0.2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    min-width: 386px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.book-card button{
+    margin-top: 0.4rem;
+}
+
+form button{
+    background-color: #6B7280;
+}
+
+#incompleteBookList, #completeBookList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#incompleteBookList h3, #completeBookList h3{
+    margin-bottom: 1rem;
+}
+
+.right-section-booklist button, .overlay button{
+    color: #FFFFFF;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.2rem;
+    margin: 2rem 0rem 0.3rem 0rem;
+}
+
+.btn-done{
+    background-color: #16A34A;
+}
+
+.btn-delete{
+    background-color: #DC2626;
+}
+
+.btn-edit{
+    background-color: #6B7280;
+}
+
+.btn-move{
+    background-color: #3B82F6;
+}
+
+/* pop up */
+
+.overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+    display: none;
+}
+
+.overlay h1{
+    align-items: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 800px) {
+    main{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
