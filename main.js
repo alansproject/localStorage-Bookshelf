@@ -3,8 +3,11 @@ const btnAddBook = document.querySelector("#bookFormSubmit")
 const statusCheckBox = document.querySelector("input[type='checkbox']")
 const incompleteBookContainer = document.querySelector('#incompleteBookList')
 const completeBookContainer = document.querySelector('#completeBookList')
-let finishedBooks = JSON.parse(localStorage.getItem('finishedBooks')).map(book => ({...book, year: Number(book.year)})) || []
-let onProgressBooks = JSON.parse(localStorage.getItem('onProgressBooks')).map(book => ({...book, year: Number(book.year)})) || []
+let finishedBooks = JSON.parse(localStorage.getItem('finishedBooks')) || []
+let onProgressBooks = JSON.parse(localStorage.getItem('onProgressBooks')) || []
+
+finishedBooks = finishedBooks.map(book => ({...book, year: Number(book.year)}))
+onProgressBooks = onProgressBooks.map(book => ({...book, year: Number(book.year)}))
 
 document.addEventListener("DOMContentLoaded", () => {
     if (!JSON.parse(localStorage.getItem('finishedBooks')) || !JSON.parse(localStorage.getItem('finishedBooks')).length){
