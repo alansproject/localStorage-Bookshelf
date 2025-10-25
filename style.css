@@ -173,11 +173,11 @@ form button{
         flex-wrap: wrap;
         gap: 2rem;
         justify-content: center;
-
     }
 
     .book-card{
-        min-width: 200px;
+        width: 200px;
+
     }
 
     .book-card .btn-move, .book-card .btn-done{
