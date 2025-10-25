@@ -176,8 +176,7 @@ form button{
     }
 
     .book-card{
-        width: 200px;
-
+        width: 250px;
     }
 
     .book-card .btn-move, .book-card .btn-done{
