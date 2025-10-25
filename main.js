@@ -122,7 +122,7 @@ btnAddBook.addEventListener('click', (e) => {
     }
 
     booksDataInput.forEach((input) => {
-        bookData[input.name] = input.value   
+        bookData[input.name] = input.name == "year" ? Number(input.value) : input.value
     })
 
     if (bookData.title && bookData.author && bookData.year){
